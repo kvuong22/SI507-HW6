@@ -134,12 +134,16 @@ The first line of code is the action of clicking and having the alert (text box)
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+The error is in red because if the value entered is not one word, the style type notes for the "Not Valid!" to show up in red font. For valid inputs which are one word, the style type notes for it to show up in blue font.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+The line is a regular expression for input that includes only capital and/or lowercase letters and no other characters. It helps figure out if the input is one word or not.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+JavaScript requires the {} instead of the : in Python after the if/else lines of code and a ; at the end of each "return statement".
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+How long the message after the input is submitted is displayed for in milliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -147,7 +151,7 @@ The first line of code is the action of clicking and having the alert (text box)
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
+The code is for setting up to check if the page is ready for JavaScript to run in the first line of code and for the form element to be available to be submitted.
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
