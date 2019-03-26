@@ -25,7 +25,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +46,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,13 +57,13 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* Like this:
+* **Kim Vuong (kvuong)**
+* Radhika Sondhi (rsondhi)
+* Shannon Weber (webersh)
+* Cassandra Eddy (cikeddy)
+* Salma Siddiqui (salmasid)
+* Min Jin Kim (minjin)
 
 ## Questions & code instructions
 
@@ -78,26 +78,37 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
+ //
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+Put a script tag in and write it in the script, curl brackets, and a closing tag (Example: lines 7 and 34)
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+Console and alert. Console is something that runs in the backend where one has to Inspect to see it. Alerts pop up on the page and the user must click OK to continue.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+alert("hello"); would need to be commented out.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+Go to line 17 and where the string says 'A name', replace that with my name, 'Kim'.
 
 * **What does the word `document` represent in this code? Explain briefly.**
+It represents the page that is going to be displayed on the web browser. It is the entire page.
 
-* **What is happening in line 12 ( 
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+The code gets the length of all list items on the page (all elements with 'li').
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+White
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+There is code for the border element that paragraphs are set to, which is gray. A new color can be selected for the paragraph border element, which can be done in JavaScript or CSS. On line 39, I replaced the code for white to 33A4FF for a blue.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+I added the code: function copyFunction2(){
+	document.querySelector('#cheer').innerHTML += "O Canada<br>"; by the other functions and oncopy="copyFunctio2n()" in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -112,7 +123,7 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+The first line of code is the action of clicking and having the alert (text box) pop up saying "hello." The second line of code is embedding the handleClick function into the Wow button so that when the user clicks on the button, he or she receives the textbox with "hello".
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
