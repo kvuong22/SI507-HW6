@@ -78,7 +78,7 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
- //
+ It is italicized and grayed out. // are used before the comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 Put a script tag in and write it in the script, curl brackets, and a closing tag (Example: lines 7 and 34)
@@ -107,8 +107,13 @@ White
 There is code for the border element that paragraphs are set to, which is gray. A new color can be selected for the paragraph border element, which can be done in JavaScript or CSS. On line 39, I replaced the code for white to 33A4FF for a blue.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
-I added the code: function copyFunction2(){
-	document.querySelector('#cheer').innerHTML += "O Canada<br>"; by the other functions and oncopy="copyFunctio2n()" in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
+I added the code:
+```
+js
+function copyFunction2(){
+	document.querySelector('#cheer').innerHTML += "O Canada<br>";
+```
+by the other functions and oncopy="copyFunctio2n()" in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
