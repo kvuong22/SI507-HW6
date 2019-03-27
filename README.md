@@ -108,12 +108,11 @@ There is code for the border element that paragraphs are set to, which is gray. 
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 I added the code:
-```
-js
+```js
 function copyFunction2(){
 	document.querySelector('#cheer').innerHTML += "O Canada<br>";
 ```
-by the other functions and oncopy="copyFunctio2n()" in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
+by the other functions and oncopy="copyFunction2()" in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
