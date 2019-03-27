@@ -112,7 +112,11 @@ I added the code:
 function copyFunction2(){
 	document.querySelector('#cheer').innerHTML += "O Canada<br>";
 ```
-by the other functions and oncopy="copyFunction2()" in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
+by the other functions and
+```js
+oncopy="copyFunction2()"
+```
+in front of McGill University. I looked at the code where "Go blue!" was and modeled the "O Canada" after that. Then I identified at "McGill University" to use the same code as what was in "University of Michigan" to get the action of copying the text in the browser to show "O Canada"
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
